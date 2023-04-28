@@ -21,6 +21,7 @@ export class Image {
             img.src = this.image;
             img.id = this.id;
             let i = this.index;
+            img.setAttribute("alt", this.alt);
             img.setAttribute('rel', "preload");
             img.setAttribute('fetchpriority', "high");
             img.setAttribute('as', "image");

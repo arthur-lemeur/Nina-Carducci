@@ -21,7 +21,7 @@ const slides = [
 
 const intervalFunction = () => {
     const intervalRunning = () => {
-        nextSlideFunction();
+        nextSlideFunction(1);
     }
     let currentInterval;
     return {
@@ -175,8 +175,8 @@ const prevSlideFunction = (x) => {
         item[item.length -1].classList.add('slide-active');
         dot[dot.length -1].classList.add('dot-active');
     } else {
-        item[i-1].classList.add('slide-active');
-        dot[i-1].classList.add('dot-active');
+        item[i-x].classList.add('slide-active');
+        dot[i-x].classList.add('dot-active');
     }
     prevAnimation(x);
     setTimeout(() => {
@@ -186,8 +186,8 @@ const prevSlideFunction = (x) => {
             dot[0].classList.remove('dot-active');
         } else {
             i--;
-            item[i+1].classList.remove('slide-active')
-            dot[i+1].classList.remove('dot-active');
+            item[i+x].classList.remove('slide-active')
+            dot[i+x].classList.remove('dot-active');
         }
     }, 600)
 }

@@ -105,6 +105,7 @@ let modalImage = document.querySelector('.modal-img');
 export const createModal = (img, i) => {
     modalWindow.style.display = 'block';
     modalImage.src = img.src;
+    modalImage.setAttribute("alt", img.alt);
     modalWindow.style.opacity = "1";
     modal.style.transform = 'none';
     modalBackGround.style.opacity = "0.5";

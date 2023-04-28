@@ -1,0 +1,56 @@
+[
+  {
+    "image": "./assets/images/small/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash_small.webp",
+    "tag": "Concert",
+    "alt": "concert venue",
+    "id": "1"
+  },
+  {
+    "image": "./assets/images/small/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash_small.webp",
+    "tag": "Entreprises",
+    "alt": "portrait of a man in suit",
+    "id": "2"
+  },
+  {
+    "image": "./assets/images/small/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash_small.webp",
+    "tag": "Entreprises",
+    "alt": "woman smiling in entreprise",
+    "id": "3"
+  },
+  {
+    "image": "./assets/images/small/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash_small.webp",
+    "tag": "Mariages",
+    "alt": "hands holding",
+    "id": "4"
+  },
+  {
+    "image": "./assets/images/small/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash_small.webp",
+    "tag": "Portrait",
+    "alt": "portrait of black man closing his eyes",
+    "id": "5"
+  },
+  {
+    "image": "./assets/images/small/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_small.webp",
+    "tag": "Mariages",
+    "alt": "portrait of brides smiling at each other",
+    "id": "6"
+  },
+  {
+    "image": "./assets/images/small/gallery/portraits/nino-van-prattenburg-443cl1uR_8-unsplash_small.webp",
+    "tag": "Portrait",
+    "alt": "portrait of young woman with glasses",
+    "id": "7"
+  },
+  {
+    "image": "./assets/images/small/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash_small.webp",
+    "tag": "Concert",
+    "alt": "singer at a concert up hand up in the air",
+    "id": "8"
+  },
+  {
+    "image": "./assets/images/small/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash_small.webp",
+    "tag": "Entreprises",
+    "alt": "woman smiling in entreprise",
+    "id": "9"
+  }
+]

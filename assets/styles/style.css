@@ -5,6 +5,11 @@ body {
 * {
 	font-family: 'Inter';
 	font-style: normal;
+	line-height: 1.5;
+}
+
+img {
+	vertical-align: middle
 }
 .top-header {
 	background-color: white;
@@ -20,6 +25,7 @@ body {
 
 .top-header .name {
 	font-size: 26px;
+	margin: 0;
 }
 
 .nav ul {
@@ -76,12 +82,14 @@ body {
 
 }
 #about-me {
-	flex: 2
+	flex: 2;
 }
 .about-me__title {
 	margin-top: 1em;
 	margin-bottom: 60px;
 	font-size: 30px;
+	font-weight: 500;
+	line-height: 1.2;
 }
 .about-me__introduction {
 	font-family: 'Spectral';
@@ -92,14 +100,14 @@ body {
 #about-me p {
 	width: 80%;
 	font-size: 14px;
+	margin-top: 0;
+	margin-bottom: 1rem;
 }
 
-#gallery {
-	/*	min-height: 100vh; */
-}
-.title{
+.title {
 	text-align: center;
 	padding-block: 2em;
+	font-size: 2rem;
 }
 .gallery .nav {
 	justify-content: center;
@@ -111,28 +119,6 @@ body {
 }
 .nav-pills .nav-link {
 	color: #000
-}
-.item-column {
-	position: relative;
-	margin-bottom: 0 !important;
-	padding: 0;
-}
-.item-column::after{
-	content: "";
-	display: block;
-	padding-bottom: 100%;
-
-}
-.gallery-item {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	padding: .5em;
-}
-
-.gallery-item:hover {
-	cursor: pointer;
 }
 
 .mg-prev, .mg-next {
@@ -157,12 +143,17 @@ body {
 	font-style: italic;
 	font-weight: 300;
 	font-size: calc(1.375rem + 1.5vw);
-
+	margin-top: 0;
+	margin-bottom: 1rem;
 }
 .quote__author {
 	font-family: Spectral;
 	font-weight: 800;
 	font-size: 22px;
+}
+
+figure, blockquote {
+	margin: 0;
 }
 
 #services {
@@ -185,14 +176,15 @@ body {
 	justify-content: space-between;
 	display: flex;
 	padding : 2em 0;
-
+	width: 80%;
+	margin: auto;
+	gap: 50px;
 }
 
 .service {
 	background-color: white;
 	max-width: 390px;
 	width: 30%;
-	height: 337px;
 	padding: 1em;
 	display: flex;
 	flex-direction: column;
@@ -227,7 +219,8 @@ body {
 }
 
 .form-container h2 {
-	font-size: calc(1.3rem + 0.6vw)
+	font-size: calc(1.3rem + 0.6vw);
+	margin-top: 0;
 }
 form {
 	display: flex;

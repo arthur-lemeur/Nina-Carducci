@@ -1,4 +1,4 @@
-import {createModal} from "../gallery3.js";
+import {createModal} from "../gallery.js";
 
 export class Image {
 

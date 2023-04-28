@@ -5,19 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Bienvenue sur le site de la photographe Nina Carducci. Vous pouvez y retrouver son portfolio ainsi que ses coordonnées pour faire appelle à ses services.">
 	<title>Nina Carducci - Photographe</title>
-	<link rel="stylesheet" href="assets/styles/style2.css">
-	<link rel="stylesheet" href="assets/styles/slider2.css">
+	<link rel="stylesheet" href="assets/styles/style.css">
+	<link rel="stylesheet" href="assets/styles/slider.css">
 	<link rel="stylesheet" href="assets/styles/gallery.css">
 	<link rel="stylesheet" href="assets/styles/modal.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-	<script type="module" src="assets/JS/gallery3.js" defer></script>
-	<script type="module" src="assets/JS/slider2.js" defer></script>
+	<script type="module" src="assets/JS/gallery.js" defer></script>
+	<script type="module" src="assets/JS/slider.js" defer></script>
 </head>
 <body>
+
 <header>
-	<div class="top-header">
 		<h1 class="name">Nina Carducci</h1>
 		<nav class="nav">
 			<ul>
@@ -28,18 +28,16 @@
 				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="instagram logo"></a></li>
 			</ul>
 		</nav>
-	</div>
 </header>
-<div id="header">
 
-	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+<section id="slider" class="carousel slide">
 		<div class="carousel-indicators">
 		</div>
 		<div class="carousel-inner" id="slide-container">
 		</div>
-	</div>
-</div>
-<div id="about">
+</section>
+
+<section id="about">
 	<div class="picture left">
 		<img src="./assets/images/small/nina_small.webp" alt="portrait of nina carducci">
 	</div>
@@ -49,8 +47,9 @@
 		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</div>
-</div>
-<div id="gallery">
+</section>
+
+<section id="gallery">
 	<h2 class="title">Portfolio</h2>
 	<div class="btn-group" role="group">
 		<button type="button" class="btn-filter active" data-filter="all">Tous</button>
@@ -84,11 +83,12 @@
 			</div>
 		</aside>
 	</div>
-</div>
-<div id="services">
+</section>
+
+<section id="services">
 	<h2 class="title">Mes services</h2>
 	<div class="container">
-		<div class="service">
+		<article class="service">
 			<div class="service__description">
 				<h3>Shooting photo</h3>
 				<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
@@ -98,8 +98,8 @@
 				<span>Matériel, déplacement inclus</span>
 			</div>
 
-		</div>
-		<div class="service">
+		</article>
+		<article class="service">
 			<div class="service__description">
 				<h3>Retouches</h3>
 				<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
@@ -108,8 +108,8 @@
 				<h4>50€/photo</h4>
 				<span>2 AR par photo</span>
 			</div>
-		</div>
-		<div class="service">
+		</article>
+		<article class="service">
 			<div class="service__description">
 				<h3>Album photos</h3>
 				<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
@@ -118,18 +118,20 @@
 				<h4>400€ album A4</h4>
 				<span>30 pages recto/verso</span>
 			</div>
-		</div>
+		</article>
 	</div>
-</div>
-<div class="quote">
+</section>
+
+<section class="quote">
 	<figure>
 		<blockquote>
 			<p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</p>
 		</blockquote>
 		<figcaption class="quote__author">- Richard Avedon</figcaption>
 	</figure>
-</div>
-<div id="contact">
+</section>
+
+<section id="contact">
 	<div class="container">
 		<div class="form-container">
 			<h2>Une question ? Une demande de devis ?</h2>
@@ -148,7 +150,8 @@
 			<img src="./assets/images/small/camera_small.webp" loading="lazy" alt="camera"/>
 		</div>
 	</div>
-</div>
+</section>
+
 <div class="modal-backdrop fade show"></div>
 </body>
 </html>

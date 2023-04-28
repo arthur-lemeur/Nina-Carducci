@@ -84,7 +84,7 @@ initialisationDots();
 
 
 
-const sliderContainer = document.getElementById("carouselExampleIndicators");
+const sliderContainer = document.getElementById("slider");
 
 //
 // Création flèche de gauche
@@ -124,21 +124,21 @@ const item = document.querySelectorAll(".carousel-item");
 // Mouvement des animations
 //
 
-const nextAnimation = () => {
+const nextAnimation = (x) => {
     item[i].style.animation = "0.7s slideincurrent";
-    if (i < (slides.length - 1)) {
-        item[i+1].style.animation = "0.7s slideinnext";
+    if (i < (slides.length - x)) {
+        item[i+x].style.animation = "0.7s slideinnext";
     } else {
         item[0].style.animation = "0.7s slideinnext";
     }
 }
 
-const prevAnimation = () => {
+const prevAnimation = (x) => {
     item[i].style.animation = "0.7s slideoutcurrent";
     if (i === 0) {
-        item[item.length - 1].style.animation = "0.7s slideoutnext";
+        item[item.length - x].style.animation = "0.7s slideoutnext";
     } else {
-        item[i - 1].style.animation = "0.7s slideoutnext";
+        item[i - x].style.animation = "0.7s slideoutnext";
     }
 }
 
@@ -146,7 +146,7 @@ const prevAnimation = () => {
 // Fonctions next et previous du slider
 //
 
-const nextSlideFunction = () => {
+const nextSlideFunction = (x) => {
     if (i < (slides.length - 1)) {
         item[i+1].classList.add('slide-active');
         dot[i+1].classList.add('dot-active');
@@ -154,7 +154,7 @@ const nextSlideFunction = () => {
         item[0].classList.add('slide-active');
         dot[0].classList.add('dot-active');
     }
-    nextAnimation();
+    nextAnimation(x);
     setTimeout(() => {
         if (i < (slides.length - 1)) {
             i++;
@@ -168,7 +168,7 @@ const nextSlideFunction = () => {
     }, 600)
 }
 
-const prevSlideFunction = () => {
+const prevSlideFunction = (x) => {
     if (i === 0) {
         item[item.length -1].classList.add('slide-active');
         dot[dot.length -1].classList.add('dot-active');
@@ -176,7 +176,7 @@ const prevSlideFunction = () => {
         item[i-1].classList.add('slide-active');
         dot[i-1].classList.add('dot-active');
     }
-    prevAnimation();
+    prevAnimation(x);
     setTimeout(() => {
         if (i === 0) {
             i = item.length - 1;
@@ -196,13 +196,13 @@ const prevSlideFunction = () => {
 
 arrowRightElement.addEventListener('click', function() {
     interval.stop()
-    nextSlideFunction()
+    nextSlideFunction(1)
     interval.start()
 });
 
 arrowLeftElement.addEventListener('click', function() {
     interval.stop()
-    prevSlideFunction()
+    prevSlideFunction(1)
     interval.start()
 });
 
@@ -219,11 +219,11 @@ dotsArray.forEach((el, n) => {
         interval.stop();
         item[n].classList.add("slide-active")
         dot[n].classList.add("dot-active");
-        if (n >= i) {
-            nextAnimation();
+         if (n >= i) {
+            nextAnimation(n-i);
         } else {
-            prevAnimation();
-        }
+                prevAnimation(i-n);
+            }
         setTimeout(() => {
             dot[i].classList.remove("dot-active");
             item[i].classList.remove("slide-active");

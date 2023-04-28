@@ -37,7 +37,7 @@ let interval = intervalFunction();
 
 //
 // Initialisation du slider, création de l'image
-// 
+//
 
 const initialisationSlider = () => {
     slides.map(element => {
@@ -97,6 +97,7 @@ const sliderContainer = document.getElementById("slider");
 
 const arrowLeftElement = document.createElement("button");
 arrowLeftElement.setAttribute("type", "button");
+arrowLeftElement.setAttribute("aria-label", "button left arrow");
 arrowLeftElement.classList.add("carousel-control-prev");
 const arrowLeftIcon = document.createElement('span');
 arrowLeftIcon.classList.add("carousel-control-prev-icon");
@@ -110,6 +111,7 @@ sliderContainer.appendChild(arrowLeftElement);
 
 const arrowRightElement = document.createElement("button");
 arrowRightElement.setAttribute("type", "button");
+arrowRightElement.setAttribute("aria-label", "button right arrow");
 arrowRightElement.classList.add("carousel-control-next");
 const arrowRightIcon = document.createElement('span');
 arrowRightIcon.classList.add("carousel-control-next-icon");

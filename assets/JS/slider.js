@@ -37,7 +37,7 @@ let interval = intervalFunction();
 
 //
 // Initialisation du slider, création de l'image
-//
+// 
 
 const initialisationSlider = () => {
     slides.map(element => {
@@ -46,6 +46,10 @@ const initialisationSlider = () => {
         item.id = element.id;
         const image = document.createElement("img");
         image.setAttribute('id', "image");
+        image.setAttribute('rel', "preload");
+        image.setAttribute('fetchpriority', "high");
+        image.setAttribute('as', "image");
+        image.setAttribute('type', "image/webp");
         image.alt = element.alt;
         image.src = element.image;
 
@@ -68,6 +72,7 @@ const initialisationDots = () => {
     for (let i = 0; i < slides.length; i++) {
         let dots = document.createElement('button');
         dots.setAttribute('type', 'button');
+        dots.setAttribute("aria-label", "navigation button for slider")
         dots.classList.add('dot');
 
         let dotContainer = document.querySelector('.carousel-indicators');
@@ -111,11 +116,6 @@ arrowRightIcon.classList.add("carousel-control-next-icon");
 
 arrowRightElement.appendChild(arrowRightIcon);
 sliderContainer.appendChild(arrowRightElement);
-
-
-const container = document.getElementById('slide-container');
-const amount = 33.33333;
-let initial = 0;
 
 let i = 0;
 const item = document.querySelectorAll(".carousel-item");

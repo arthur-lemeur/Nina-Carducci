@@ -3,14 +3,39 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Bienvenue sur le site de la photographe Nina Carducci. Vous pouvez y retrouver son portfolio ainsi que ses coordonnées pour faire appelle à ses services.">
 	<title>Nina Carducci - Photographe</title>
+	<meta name="description" content="Bienvenue sur le site de la photographe Nina Carducci. Vous pouvez y retrouver son portfolio ainsi que ses coordonnées pour faire appelle à ses services.">
+	<meta name="og:title" content="Nina Carducci"/>
+	<meta property="og:image" content="./assets/images/camera_small.webp"/>
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:image:src" content="./assets/images/camera_small.webp"/>
 	<link rel="stylesheet" href="assets/styles/style.css">
 	<link rel="stylesheet" href="assets/styles/slider.css">
 	<link rel="stylesheet" href="assets/styles/gallery.css">
 	<link rel="stylesheet" href="assets/styles/modal.css">
 	<script type="module" src="assets/JS/gallery.js" defer></script>
 	<script type="module" src="assets/JS/slider.js" defer></script>
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "LocalBusiness",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Bordeaux",
+				"addressRegion": "Nouvelle-Aquitaine",
+				"postalCode": "33200",
+				"streetAddress": "68 avenue Alsace-Lorraine"
+			},
+			"name": "Nina Carducci",
+			"openingHours": [
+				"Mo-Fr 10:00-19:00"
+			],
+			"priceRange": "$$",
+			"telephone": "05 56 67 78 89",
+			"url": "https://arthur-lemeur.github.io/Nina-Carducci/"
+		}
+	</script>
 </head>
 <body>
 
@@ -36,7 +61,7 @@
 
 <section id="about">
 	<div class="picture left">
-		<img src="./assets/images/small/nina_small.webp" alt="portrait of nina carducci">
+		<img src="./assets/images/nina_small.webp" alt="portrait of nina carducci">
 	</div>
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
@@ -74,7 +99,7 @@
 			<div class="modal-wrapper js-modal-stop">
 				<div class="modal-body">
 					<div class="g-prev"><</div>
-					<img class="modal-img" src="./assets/images/small/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash_small.webp" alt="">
+					<img class="modal-img" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash_small.webp" alt="">
 					<div class="g-next">></div>
 				</div>
 			</div>
@@ -144,7 +169,7 @@
 			</form>
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/small/camera_small.webp" loading="lazy" alt="camera"/>
+			<img src="./assets/images/camera_small.webp" loading="lazy" alt="camera"/>
 		</div>
 	</div>
 </section>

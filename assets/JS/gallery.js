@@ -102,9 +102,9 @@ let modalImage = document.querySelector('.modal-img');
 
 
 
-export const createModal = (img, i) => {
+export const createModal = (imgBig,img, i) => {
     modalWindow.style.display = 'block';
-    modalImage.src = img.src;
+    modalImage.src = imgBig;
     modalImage.setAttribute("alt", img.alt);
     modalWindow.style.opacity = "1";
     modal.style.transform = 'none';
@@ -124,7 +124,7 @@ export const createModal = (img, i) => {
 
         }
         currentImageIndex = prevImageIndex;
-        modalImage.src = array[currentImageIndex].image;
+        modalImage.src = array[currentImageIndex].imgBig;
     }
 
     const nextImageFunction = () => {
@@ -134,7 +134,7 @@ export const createModal = (img, i) => {
             nextImageIndex = currentImageIndex + 1;
         }
         currentImageIndex = nextImageIndex;
-        modalImage.src = array[currentImageIndex].image;
+        modalImage.src = array[currentImageIndex].imgBig;
     }
 
     prevImage.addEventListener('click', previousImageFunction);

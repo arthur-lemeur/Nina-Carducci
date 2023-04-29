@@ -5,7 +5,8 @@ export class Image {
     constructor(element, index) {
         this.index = index;
         this.id = element.id;
-        this.image = element.image
+        this.image = element.image;
+        this.imgBig = element.imgBig;
         this.categoryName = element.tag;
         this.alt = element.alt;
         this.template = document.getElementById('gallery-image-layout');
@@ -21,13 +22,14 @@ export class Image {
             img.src = this.image;
             img.id = this.id;
             let i = this.index;
+            let imgBig = this.imgBig;
             img.setAttribute("alt", this.alt);
             img.setAttribute('rel', "preload");
             img.setAttribute('fetchpriority', "high");
             img.setAttribute('as', "image");
             img.setAttribute('type', "image/webp");
             img.addEventListener('click', () => {
-                createModal(img, i);
+                createModal(imgBig, img, i);
             });
             this.galleryContainer.appendChild(imageTemplate);
         } catch (e) {

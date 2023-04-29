@@ -1,16 +1,16 @@
 const slides = [
     {
-        "image": "./assets/images/small/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_small.webp",
+        "image": "./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp",
         "alt": "man in suit walking on pedestrian crossing",
         "id": "slide-1"
     },
     {
-        "image": "./assets/images/small/slider/nicholas-green-nPz8akkUmDI-unsplash_small.webp",
+        "image": "./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp",
         "alt": "crowd cheering at an event",
         "id": "slide-2"
     },
     {
-        "image": "./assets/images/small/slider/edward-cisneros-3_h6-1NPDGw-unsplash_small.webp",
+        "image": "./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp",
         "alt": "newly brides kissing in alley of guests at mariage",
         "id": "slide-3"
     }

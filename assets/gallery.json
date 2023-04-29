@@ -1,62 +1,62 @@
 [
   {
-    "image": "./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash_small.webp",
+    "image": "./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp",
     "imgBig": "./assets/images/modal/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg",
     "tag": "Concert",
     "alt": "concert venue",
     "id": "1"
   },
   {
-    "image": "./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash_small.webp",
+    "image": "./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp",
     "imgBig": "./assets/images/modal/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg",
     "tag": "Entreprises",
     "alt": "portrait of a man in suit",
     "id": "2"
   },
   {
-    "image": "./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash_small.webp",
+    "image": "./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp",
     "imgBig": "./assets/images/modal/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg",
     "tag": "Entreprises",
     "alt": "woman smiling in entreprise",
     "id": "3"
   },
   {
-    "image": "./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash_small.webp",
+    "image": "./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp",
     "imgBig": "./assets/images/modal/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg",
     "tag": "Mariages",
     "alt": "hands holding",
     "id": "4"
   },
   {
-    "image": "./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash_small.webp",
+    "image": "./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp",
     "imgBig": "./assets/images/modal/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg",
     "tag": "Portrait",
     "alt": "portrait of black man closing his eyes",
     "id": "5"
   },
   {
-    "image": "./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_small.webp",
+    "image": "./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp",
     "imgBig": "./assets/images/modal/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg",
     "tag": "Mariages",
     "alt": "portrait of brides smiling at each other",
     "id": "6"
   },
   {
-    "image": "./assets/images/gallery/portraits/nino-van-prattenburg-443cl1uR_8-unsplash_small.webp",
+    "image": "./assets/images/gallery/portraits/nino-van-prattenburg-443cl1uR_8-unsplash.webp",
     "imgBig": "./assets/images/modal/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.jpg",
     "tag": "Portrait",
     "alt": "portrait of young woman with glasses",
     "id": "7"
   },
   {
-    "image": "./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash_small.webp",
+    "image": "./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp",
     "imgBig": "./assets/images/modal/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg",
     "tag": "Concert",
     "alt": "singer at a concert up hand up in the air",
     "id": "8"
   },
   {
-    "image": "./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash_small.webp",
+    "image": "./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp",
     "imgBig": "./assets/images/modal/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg",
     "tag": "Entreprises",
     "alt": "woman smiling in entreprise",

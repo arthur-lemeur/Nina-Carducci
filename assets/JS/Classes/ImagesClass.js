@@ -28,6 +28,7 @@ export class Image {
             img.setAttribute('fetchpriority', "high");
             img.setAttribute('as', "image");
             img.setAttribute('type', "image/webp");
+            img.setAttribute("loading", "lazy");
             img.addEventListener('click', () => {
                 createModal(imgBig, img, i);
             });

@@ -1,16 +1,16 @@
 const slides = [
     {
-        "image": "./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp",
+        "image": "./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplashX.avif",
         "alt": "man in suit walking on pedestrian crossing",
         "id": "slide-1"
     },
     {
-        "image": "./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp",
+        "image": "./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.avif",
         "alt": "crowd cheering at an event",
         "id": "slide-2"
     },
     {
-        "image": "./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp",
+        "image": "./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplashX.avif",
         "alt": "newly brides kissing in alley of guests at mariage",
         "id": "slide-3"
     }
@@ -49,7 +49,6 @@ const initialisationSlider = () => {
         image.setAttribute('rel', "preload");
         image.setAttribute('fetchpriority', "high");
         image.setAttribute('as', "image");
-        image.setAttribute('type', "image/webp");
         image.alt = element.alt;
         image.src = element.image;
 

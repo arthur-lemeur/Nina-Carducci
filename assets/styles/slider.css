@@ -22,6 +22,7 @@
 
 .carousel-inner {
     width: 100%;
+    min-height: 170px;
     overflow: hidden;
     vertical-align: middle;
     text-align: center;
